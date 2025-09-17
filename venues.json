@@ -170,5 +170,32 @@
         "feasibility": "not feasible",
         "comment": "On the expensive side, has limited hours, need a member to endorse and be present for the entire event.",
         "link": "https://www.petoneclub.co.nz/functions/"
-    }   
+    },
+
+
+
+    {
+        "name": "Karori Arts and Crafts centre",
+        "feasibility": "pbq",
+        "comment": "Good price, can fit up to 20 people",
+        "link": ""
+    },   
+    {
+        "name": "Hataitai Centre (formerly Hataitai Bowling club)",
+        "feasibility": "pbq",
+        "comment": "Too small for normal comps, but fine for PBQ comps.",
+        "link": "https://hataitai.org.nz/hataitai-centre"
+    },
+    {
+        "name": "Brooklyn Community Centre",
+        "feasibility": "pbq",
+        "comment": "Too small for normal comps, but fine for PBQ comps.",
+        "link": "https://www.brooklyncommunitycentre.org.nz/"
+    },
+    {
+        "name": "KiwiClass",
+        "feasibility": "pbq",
+        "comment": "Used for OCFMC Wellington and did well.",
+        "link": "https://kiwiclass.org.nz/"
+    }
 ]

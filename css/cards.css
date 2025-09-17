@@ -54,3 +54,8 @@
     color: #dc3545;
     font-weight: bold;
 }
+
+.pbq {
+    color: #FF79C6; /* soft pinkish-magenta, good contrast, easier on eyes */
+    font-weight: bold;
+}

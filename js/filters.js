@@ -12,13 +12,18 @@ export function initFilters() {
             filterRadios.forEach(r => r.parentElement.classList.remove('active'));
             radio.parentElement.classList.add('active');
 
-            // Filter venues
-            if (filter === 'all') displayVenues(venues);
-            else displayVenues(venues.filter(v => v.feasibility.toLowerCase() === filter));
+            // Filter using the raw feasibility from JSON
+            if (filter === 'all') {
+                displayVenues(venues);
+            } else {
+                displayVenues(
+                    venues.filter(v => v.feasibility.toLowerCase() === filter)
+                );
+            }
         });
     });
 
-    // Initialize active state for the checked radio
+    // Initialize active state for checked radio
     const checkedRadio = document.querySelector('.filters input[type="radio"]:checked');
     if (checkedRadio) checkedRadio.parentElement.classList.add('active');
 }
