@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellington Speedcubing Venues</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/filters.css">
+    <link rel="stylesheet" href="./css/cards.css">
+</head>
+<body>
+    <header>
+        <h1>Wellington Competition Venues</h1>
+    </header>
+
+    <main>
+        <div class="filters">
+            <label>
+                <input type="radio" name="filter" value="all" checked>
+                All
+            </label>
+            <label>
+                <input type="radio" name="filter" value="feasible">
+                Feasible Venues
+            </label>
+            <label>
+                <input type="radio" name="filter" value="potentially feasible">
+                Potentially Feasible Venues
+            </label>
+            <label>
+                <input type="radio" name="filter" value="not feasible">
+                Unfeasible Venues
+            </label>
+        </div>
+
+        <div id="venue-list" class="venue-list"></div>
+        <footer>
+            <a href="#" target="_blank">Source code on GitHub</a>
+            <br>
+            <a href="#" target="_blank">Page written by Oscar Welton-Rosie</a>
+        </footer>
+    </main>
+
+    <script type="module">
+        import { fetchVenues, venues } from './js/data.js';
+        import { displayVenues } from './js/ui.js';
+        import { initFilters } from './js/filters.js';
+    
+        // Fetch venues first
+        await fetchVenues();
+    
+        // Display all venues
+        displayVenues(venues);
+    
+        // Initialize filter logic
+        initFilters();
+    </script>
+    
+</body>
+</html>

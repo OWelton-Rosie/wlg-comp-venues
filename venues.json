@@ -1,0 +1,174 @@
+[
+    {
+        "name": "Johnsonville Community Centre",
+        "feasibility": "feasible",
+        "comment": "Excellent venue; good size, plenty of facilities, slightly on the expensive side but good option.",
+        "link": "https://www.johnsonvillecommunitycentre.org.nz/about-us"
+    },
+    {
+        "name": "Mungavin Hall",
+        "feasibility": "feasible",
+        "comment": "Puzzling Porirua 2022 venue, good, not available Sundays, lacking in facilities, but solid option.",
+        "link": "https://www.venues.org.nz/new-zealand/porirua/venue/mungavin-hall"
+    },
+    {
+        "name": "Paraparaumu Memorial Hall",
+        "feasibility": "feasible",
+        "comment": "Good venue, albeit slightly echoey.",
+        "link": "https://forms.kapiticoast.govt.nz/facilities/facility/paraparaumu-memorial-hall"
+    },
+    {
+        "name": "Victoria University of Wellington - AM102 and AM104",
+        "feasibility": "feasible",
+        "comment": "Very good venue. Can get the venue for free as Jack is a student at VUW.",
+        "link": "https://www.wgtn.ac.nz/about/campuses-facilities/venue-hire"
+    },
+    {
+        "name": "Wellington East Girls College",
+        "feasibility": "feasible",
+        "comment": "Good - missing some tables but was used for Wellington Summer 2023 and did well. ",
+        "link": "https://www.wegc.school.nz/our-school/hire"
+    },
+    {
+        "name": "Akau Tangi (formerly ASB) cntre",
+        "feasibility": "feasible",
+        "comment": "Good - slightly awkward shape but good for 50 people. ",
+        "link": "https://wellington.govt.nz/recreation/facilities-and-centres/akau-tangi-sports-centre/venue-and-equipment-hire/courts"
+    },
+    {
+        "name": "Wellington Bridge Club",
+        "feasibility": "feasible",
+        "comment": "Was used for Wellington Winter 2025 and did well. Has permanent Sunday bookings, but could work for a 1 day comp. ",
+        "link": "https://wellingtonbridge.co.nz/venue-hire/"
+    },
+    {
+        "name": "Epuni Community Hall",
+        "feasibility": "feasible",
+        "comment": "Haven't been inside, but seems good in photos, held day 1 of Nationals 2023.",
+        "link": "https://www.hcmtnz.com/hall-hire"
+    },
+
+
+    {
+        "name": "Newtown Park Function Rooms",
+        "feasibility": "potentially feasible",
+        "comment": "Venue website states that it is only suitable for sports-related activities, slightly overpriced and an awkward shape.",
+        "link": "https://wellington.govt.nz/community-support-and-resources/resources-and-facilities/council-venues-for-hire/meetings-and-workshops/newtown-park-function-rooms"
+    },
+    {
+        "name": "Wellington Indian Association halls",
+        "feasibility": "potentially feasible",
+        "comment": "Probably feasible for Nats, a bit on the pricey side.",
+        "link": "https://www.wia.org.nz/venue-hire"
+    },
+    {
+        "name": "Wellington Pipe Band Hall",
+        "feasibility": "potentially feasible",
+        "comment": "Feasible for a 40 person comp and decent price.",
+        "link": "https://www.cwpipeband.com/hall"
+    },
+    {
+        "name": "Berhampore School Hall",
+        "feasibility": "potentially feasible",
+        "comment": "Haven't been inside recently, might be a bit small, planning to check it out at some point.",
+        "link": ""
+    },
+    {
+        "name": "South Wellington Intermediate School (SWIS) Hall",
+        "feasibility": "potentially feasible",
+        "comment": "Hall has been resurfaced, need to contact them to see if bookings can be made.",
+        "link": ""
+    },
+    {
+        "name": "Vogelmorn Hall",
+        "feasibility": "potentially feasible",
+        "comment": "Comes with 8 tables and 50 chairs (would need to hire more), apart from that looks perfect.",
+        "link": "https://www.vogelmorn.nz/vogelmorn-hall"
+    },
+    {
+        "name": "St Patrick's Hall",
+        "feasibility": "potentially feasible",
+        "comment": "Photos look somewhat spartan, but could work. They aren't appearing to reply to emails about hiring their hall, but I will try again.",
+        "link": "https://www.neighbourly.co.nz/public/wellington/miramar/message/72332466"
+    },
+    {
+        "name": "Filipino Community Centre",
+        "feasibility": "potentially feasible",
+        "comment": "Has permanent bookings on Saturday, mostly free on Sundays. I was quoted $360 for a 12 hour hire on Sunday.",
+        "link": "https://bulwagan.wixsite.com/filipinocommcentre/facilities"
+    },
+    {
+        "name": "Johnsonville club",
+        "feasibility": "potentially feasible",
+        "comment": "Was used for NZ Cubing in the Capital 2025 and did well, need to check with Elizabeth about how the booking process went.",
+        "link": "https://www.jclub.co.nz/venuehire"
+    },
+
+
+    {
+        "name": "Wellington College",
+        "feasibility": "not feasible",
+        "comment": "Way too expensive.",
+        "link": "https://1867.co.nz/"
+    },
+    {
+        "name": "Knox Church",
+        "feasibility": "not feasible",
+        "comment": "Welcome to Wellington 2024 venue; was perfect, but not available Sundays and has permanent bookings on Saturdays.",
+        "link": "https://www.knox.org.nz/bookings"
+    },
+    {
+        "name": "Te Papa",
+        "feasibility": "not feasible",
+        "comment": "Way too expensive.",
+        "link": "https://www.takina.co.nz/organise/rooms-and-spaces"
+    },
+    {
+        "name": "Takina Convention Centre",
+        "feasibility": "not feasible",
+        "comment": "Too expensive, (most likely even for a major).",
+        "link": "https://www.takina.co.nz/organise/rooms-and-spaces"
+    },
+    {
+        "name": "Public Trust Hall",
+        "feasibility": "not feasible",
+        "comment": "Does not seem suited to our needs.",
+        "link": ""
+    },
+    {
+        "name": "Aro Valley Community Centre",
+        "feasibility": "not feasible",
+        "comment": "Too small.",
+        "link": ""
+    },
+    {
+        "name": "Wellington High School Hall",
+        "feasibility": "not feasible",
+        "comment": "Too big and expensive for a local competition.",
+        "link": ""
+    },
+    {
+        "name": "Ngaio Town Hall",
+        "feasibility": "not feasible",
+        "comment": "Probably fine for 40 person comp, but insanely echoey even for a PBQ so don't use again.",
+        "link": "https://wellington.govt.nz/community-support-and-resources/resources-and-facilities/community-centres/locations/ngaio-town-hall"
+    },
+    {
+        "name": "Clyde Quay School Hall",
+        "feasibility": "not feasible",
+        "comment": "Hall is currently out of order. Office are unable to provide dates of when it'll be available.",
+        "link": ""
+    },
+    {
+        "name": "The hub Poneke",
+        "feasibility": "not feasible",
+        "comment": "Likely too expensive for a local comp, there are regular bookings on Saturdays.",
+        "link": "https://www.toituponeke.com/room-hire"
+    },
+    {
+        "name": "Petone Club",
+        "feasibility": "not feasible",
+        "comment": "On the expensive side, has limited hours, need a member to endorse and be present for the entire event.",
+        "link": "https://www.petoneclub.co.nz/functions/"
+    }   
+]
