@@ -1,4 +1,3 @@
-// filters.js
 import { displayVenues } from './ui.js';
 import { venues } from './data.js';
 
@@ -9,8 +8,17 @@ export function initFilters() {
         radio.addEventListener('change', () => {
             const filter = radio.value.toLowerCase();
 
+            // Highlight active label
+            filterRadios.forEach(r => r.parentElement.classList.remove('active'));
+            radio.parentElement.classList.add('active');
+
+            // Filter venues
             if (filter === 'all') displayVenues(venues);
             else displayVenues(venues.filter(v => v.feasibility.toLowerCase() === filter));
         });
     });
+
+    // Initialize active state for the checked radio
+    const checkedRadio = document.querySelector('.filters input[type="radio"]:checked');
+    if (checkedRadio) checkedRadio.parentElement.classList.add('active');
 }

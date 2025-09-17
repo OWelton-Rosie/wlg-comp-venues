@@ -39,3 +39,11 @@
     border-color: #00bfff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.4);
 }
+
+.filters label.active {
+    background-color: #ffff;
+    color: black;
+    border-color: #ffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
