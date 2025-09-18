@@ -23,6 +23,9 @@ Technically speaking, the app is built with HTML for markup, CSS for styling and
 
 It's important to note that it's essential to build a server when running the app locally. This is due to the fact that `file://` URLs will not use the JS `import` function to load the contents of a JSON. This is due to security restrictions.
 
+# Creating your own instance
+If you're keen to reuse my code to make a catalog for your region, you're more than welcome to. Please follow the insturctions in `installation.md` for guidance on how to do this.
+
 ## Todo:
 - ~~Add search function~~
 - ~~Add light/dark mode?~~
