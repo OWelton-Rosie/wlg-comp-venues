@@ -1,0 +1,27 @@
+/* Search Bar Styles */
+.search-bar {
+    text-align: center;
+    margin: 1rem 0 2rem 0;
+}
+
+#search-input {
+    width: 90%;
+    max-width: 500px;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #1f1f1f; /* match header/footer */
+    color: #eee;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#search-input::placeholder {
+    color: #888;
+}
+
+#search-input:focus {
+    border-color: #00bfff; /* same accent as links */
+    box-shadow: 0 0 5px rgba(0, 191, 255, 0.5);
+}
