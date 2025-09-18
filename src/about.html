@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-NZ">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,44 +7,66 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/filters.css">
     <link rel="stylesheet" href="./css/cards.css">
+    <link rel="stylesheet" href="./css/themeToggle.css"> 
+
     <style>
         body, ul li {
             margin-left: 50px;
             margin-right: 50px;
         }
+        /* Hide main content by default */
+        #js-content {
+            display: none;
+        }
     </style>
-
-
 </head>
 <body>
-    <header>
-        <a href="index.html">Back to venue list</a>
-        <h1>About this site</h1>
-    </header>
-    <main>
-        <br>
-        <p>This site exists as a convenience tool for organisers and delegates. After I felt that the catalog would be better if it was in the form of a website (as opposed to a Google Sheet), I built this site.</p>
+    <noscript>
+        <div style="padding: 2rem; text-align: center; font-size: 1.2rem; color: red;">
+            This site requires JavaScript to function. Please enable JavaScript in your browser.
+        </div>
+    </noscript>
 
-        <h1>Organisers</h1>
-        <p>This site is <strong>not</strong> meant to be a guide on how to organise a competition. I will ignore all change requests related to material for organisers. SNZ is currently working on an organiser guide, which will be linked here when finished.</p>
+    <div id="js-content">
+        <header>
+            <a href="index.html">Back to venue list</a>
+            <h1>About this site</h1>
+            <button id="theme-toggle">🌙 Dark Mode</button>
+        </header>
 
+        <main>
+            <p>This site exists as a convenience tool for organisers and delegates. After I felt that the catalog would be better if it was in the form of a website (as opposed to a Google Sheet), I built this site.</p>
 
-        <h1>Reporting a problem</h1>
-        <p>If something needs to be changed (eg, the venue is no longer open for bookings, or the website is not available), please go <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUL7smwdQPWHp1Xgl7rZnyWGPUghqX8f7n7u0uj4lg8JkvlA/viewform?usp=dialog" target="_blank">this form</a> and submit a change request. Alternately, if you're a developer, feel free to send a <a href="https://github.com/OWelton-Rosie/wlg-comp-venues/pulls" target="_blank">Pull Request</a> to this project's GitHub page. I aim to respond to all change requests within 24 hours.</p>
+            <h1>Organisers</h1>
+            <p>This site is <strong>not</strong> meant to be a guide on how to organise a competition. I will ignore all change requests related to material for organisers. SNZ is currently working on an organiser guide, which will be linked here when finished.</p>
 
+            <h1>Reporting a problem</h1>
+            <p>If something needs to be changed (eg, the venue is no longer open for bookings, or the website is not available), please go 
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUL7smwdQPWHp1Xgl7rZnyWGPUghqX8f7n7u0uj4lg8JkvlA/viewform?usp=dialog" target="_blank">this form</a> 
+            and submit a change request. Alternately, if you're a developer, feel free to send a 
+            <a href="https://github.com/OWelton-Rosie/wlg-comp-venues/pulls" target="_blank">Pull Request</a> 
+            to this project's GitHub page. I aim to respond to all change requests within 24 hours.</p>
 
-        <h1>Useful links</h1>
-        <ul>
-            <li><a href="https://www.worldcubeassociation.org/competitions?search=wellington" target="_blank">All upcoming WCA competitions in Wellington</a></li>
-            <li><a href="https://speedcubing.org.nz/competitions" target="_blank">All upcoming WCA competitions in New Zealand</a></li>
-        </ul>
-
+            <h1>Useful links</h1>
+            <ul>
+                <li><a href="https://www.worldcubeassociation.org/competitions?search=wellington" target="_blank">All upcoming WCA competitions in Wellington</a></li>
+                <li><a href="https://speedcubing.org.nz/competitions" target="_blank">All upcoming WCA competitions in New Zealand</a></li>
+            </ul>
+        </main>
 
         <footer>
             <p><a href="https://github.com/OWelton-Rosie/wlg-comp-venues" target="_blank">Source code on GitHub</a></p>
             <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSeUL7smwdQPWHp1Xgl7rZnyWGPUghqX8f7n7u0uj4lg8JkvlA/viewform?usp=header" target="_blank">Request a change</a></p>
         </footer>
-    </main>
-    
+    </div>
+
+    <!-- import toggle JS -->
+    <script type="module">
+        // Show JS content
+        document.getElementById('js-content').style.display = 'block';
+
+        import { initThemeToggle } from './js/themeToggle.js';
+        initThemeToggle();
+    </script>
 </body>
 </html>

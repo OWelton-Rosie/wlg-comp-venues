@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-NZ">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,68 +8,89 @@
     <link rel="stylesheet" href="./css/filters.css">
     <link rel="stylesheet" href="./css/cards.css">
     <link rel="stylesheet" href="./css/searchBar.css">
-
+    <link rel="stylesheet" href="./css/themeToggle.css">
+    <style>
+        /* Hide main content by default, show only if JS runs */
+        #js-content {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Wellington Competition Venues</h1>
-    </header>
-
-    <main>
-        
-        <div class="filters">
-            <label>
-                <input type="radio" name="filter" value="all" checked>
-                All
-            </label>
-            <label>
-                <input type="radio" name="filter" value="feasible">
-                Feasible Venues
-            </label>
-            <label>
-                <input type="radio" name="filter" value="pbq">
-                PBQ Venues
-            </label>
-            <label>
-                <input type="radio" name="filter" value="potentially feasible">
-                Potentially Feasible Venues
-            </label>
-            <label>
-                <input type="radio" name="filter" value="not feasible">
-                Unfeasible Venues
-            </label>
+    <noscript>
+        <div style="padding: 2rem; text-align: center; font-size: 1.2rem; color: red;">
+            This site requires JavaScript to function. Please enable JavaScript in your browser.
         </div>
+    </noscript>
 
-        <div class="search-bar">
-            <input type="text" id="search-input" placeholder="Search venues...">
-        </div>
-        <div id="venue-list" class="venue-list"></div>
-                <footer>
+    <div id="js-content">
+        <header>
+            <h1>Wellington Competition Venues</h1>
+            <button id="theme-toggle">🌙 Dark Mode</button>
+        </header>
+
+        <main>
+            <div class="filters">
+                <label>
+                    <input type="radio" name="filter" value="all" checked>
+                    All
+                </label>
+                <label>
+                    <input type="radio" name="filter" value="feasible">
+                    Feasible Venues
+                </label>
+                <label>
+                    <input type="radio" name="filter" value="pbq">
+                    PBQ Venues
+                </label>
+                <label>
+                    <input type="radio" name="filter" value="potentially feasible">
+                    Potentially Feasible Venues
+                </label>
+                <label>
+                    <input type="radio" name="filter" value="not feasible">
+                    Unfeasible Venues
+                </label>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search venues...">
+            </div>
+
+            <div id="venue-list" class="venue-list"></div>
+        </main>
+
+        <footer>
             <p><a href="https://github.com/OWelton-Rosie/wlg-comp-venues" target="_blank">Source code on GitHub</a></p>
             <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSeUL7smwdQPWHp1Xgl7rZnyWGPUghqX8f7n7u0uj4lg8JkvlA/viewform?usp=header" target="_blank">Request a change</a></p>
             <p><a href="./about.html">About this site</a></p>
         </footer>
-    </main>
+    </div>
 
     <script type="module">
-import { fetchVenues, venues } from './js/data.js';
-import { displayVenues } from './js/ui.js';
-import { initFilters } from './js/filters.js';
-import { initSearch } from './js/search.js';
+        // Show JS content
+        document.getElementById('js-content').style.display = 'block';
 
-// Fetch venues first
-await fetchVenues();
-
-// Display all venues
-displayVenues(venues);
-
-// Initialize filter logic
-initFilters();
-
-// Initialize search
-initSearch(venues, displayVenues);
-
+        import { fetchVenues, venues } from './js/data.js';
+        import { displayVenues } from './js/ui.js';
+        import { initFilters } from './js/filters.js';
+        import { initSearch } from './js/search.js';
+        import { initThemeToggle } from './js/themeToggle.js';
+        
+        // Fetch venues first
+        await fetchVenues();
+        
+        // Display all venues
+        displayVenues(venues);
+        
+        // Initialize filter logic
+        initFilters();
+        
+        // Initialize search
+        initSearch(venues, displayVenues);
+        
+        // Initialize theme toggle
+        initThemeToggle();
     </script>
-    
 </body>
 </html>

@@ -8,8 +8,8 @@
     margin: 0 auto;
 }
 
-/* Venue cards */
-.venue-card {
+/* -------------------- Dark mode -------------------- */
+body.dark-mode .venue-card {
     background-color: #1e1e1e;
     border-radius: 8px;
     padding: 1rem 1.2rem;
@@ -17,29 +17,50 @@
     transition: all 0.3s ease;
 }
 
-.venue-card h2 {
+body.dark-mode .venue-card h2 {
     margin-top: 0;
-    color: #ffff;
-    margin-bottom: 0.5rem; /* space after title */
+    color: #fff;
+    margin-bottom: 0.5rem;
 }
 
-/* Add spacing between feasibility, comment, and link */
-.venue-card p {
-    margin: 0.5rem 0; /* space between p elements */
-}
-
-.venue-card a {
+body.dark-mode .venue-card a {
     color: #00bfff;
     text-decoration: none;
     display: inline-block;
-    margin-top: 0.75rem; /* space above link */
+    margin-top: 0.75rem;
 }
 
-.venue-card a:hover {
+body.dark-mode .venue-card a:hover {
     text-decoration: underline;
 }
 
-/* Feasibility text color coding */
+/* -------------------- Light mode -------------------- */
+body.light-mode .venue-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+body.light-mode .venue-card h2 {
+    margin-top: 0;
+    color: #111;
+    margin-bottom: 0.5rem;
+}
+
+body.light-mode .venue-card a {
+    color: #0077cc;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.75rem;
+}
+
+body.light-mode .venue-card a:hover {
+    text-decoration: underline;
+}
+
+/* Feasibility text color coding (same both modes) */
 .feasible {
     color: #28a745;
     font-weight: bold;
@@ -56,6 +77,6 @@
 }
 
 .pbq {
-    color: #FF79C6; /* soft pinkish-magenta, good contrast, easier on eyes */
+    color: #FF79C6;
     font-weight: bold;
 }

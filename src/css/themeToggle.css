@@ -1,0 +1,34 @@
+/* Theme Toggle Button */
+
+/* Base button look */
+#theme-toggle {
+    margin-left: 1rem;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    border: 1px solid;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Dark mode button */
+body.dark-mode #theme-toggle {
+    background-color: #1f1f1f;
+    border-color: #444;
+    color: #eee;
+}
+
+body.dark-mode #theme-toggle:hover {
+    background-color: #333;
+}
+
+/* Light mode button */
+body.light-mode #theme-toggle {
+    background-color: #f0f0f0;
+    border-color: #ccc;
+    color: #111;
+}
+
+body.light-mode #theme-toggle:hover {
+    background-color: #e0e0e0;
+}

@@ -7,12 +7,17 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212; /* Dark theme */
-    color: #eee;
     line-height: 1.6;
 }
 
-header, footer {
+/* -------------------- Dark mode -------------------- */
+body.dark-mode {
+    background-color: #121212;
+    color: #eee;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
     background-color: #1f1f1f;
     color: #fff;
     text-align: center;
@@ -21,37 +26,82 @@ header, footer {
     margin-top: 20px;
 }
 
-footer a, footer a:visited, header a, header a:visited {
-    color: #aaa;
-    text-decoration: none;
-    transition: color 0.3s ease; /* transition on color */
-}
-
-footer a:hover, footer a:visited:hover, header a:hover, header a:visited:hover {
-    color: #fff; /* change color on hover */
-    text-decoration: underline; /* this will switch instantly */
-}
-
-
-header h1 {
+body.dark-mode header h1 {
     font-size: 2rem;
     color: #fff;
 }
 
-h1 {
+body.dark-mode h1 {
     font-size: 1.5rem;
     margin-bottom: 0.6rem;
 }
 
-a, a:visited {
-    color: #00bfff;
+body.dark-mode a,
+body.dark-mode a:visited,
+body.dark-mode footer a,
+body.dark-mode footer a:visited,
+body.dark-mode header a,
+body.dark-mode header a:visited {
+    color: #aaa;
     text-decoration: none;
-    transition: color 0.3s ease; /* transition on color */
+    transition: color 0.3s ease;
 }
 
-a:hover, a:visited:hover {
-    color: #009acd; /* change color on hover */
-    text-decoration: underline; /* this will switch instantly */
+body.dark-mode a:hover,
+body.dark-mode a:visited:hover,
+body.dark-mode footer a:hover,
+body.dark-mode footer a:visited:hover,
+body.dark-mode header a:hover,
+body.dark-mode header a:visited:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* -------------------- Light mode -------------------- */
+body.light-mode {
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+body.light-mode header,
+body.light-mode footer {
+    background-color: #e9e9e9;
+    color: #111;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+body.light-mode header h1 {
+    font-size: 2rem;
+    color: #111;
+}
+
+body.light-mode h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+
+body.light-mode a,
+body.light-mode a:visited,
+body.light-mode footer a,
+body.light-mode footer a:visited,
+body.light-mode header a,
+body.light-mode header a:visited {
+    color: #0077cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+body.light-mode a:hover,
+body.light-mode a:visited:hover,
+body.light-mode footer a:hover,
+body.light-mode footer a:visited:hover,
+body.light-mode header a:hover,
+body.light-mode header a:visited:hover {
+    color: #005fa3;
+    text-decoration: underline;
 }
 
 p {
