@@ -1,4 +1,4 @@
-/* Reset and base styles */
+/* -------------------- Reset and base styles -------------------- */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,6 +8,22 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+}
+
+p {
+    margin-bottom: 1.2rem;
+}
+
+ul li {
+    margin-top: 0;
+}
+
+/* -------------------- Header & Footer common -------------------- */
+header,
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    margin: 20px 0;
 }
 
 /* -------------------- Dark mode -------------------- */
@@ -20,10 +36,6 @@ body.dark-mode header,
 body.dark-mode footer {
     background-color: #1f1f1f;
     color: #fff;
-    text-align: center;
-    padding: 1.5rem 0;
-    margin-bottom: 20px;
-    margin-top: 20px;
 }
 
 body.dark-mode header h1 {
@@ -36,12 +48,11 @@ body.dark-mode h1 {
     margin-bottom: 0.6rem;
 }
 
+/* Dark mode links */
 body.dark-mode a,
 body.dark-mode a:visited,
 body.dark-mode footer a,
-body.dark-mode footer a:visited,
-body.dark-mode header a,
-body.dark-mode header a:visited {
+body.dark-mode footer a:visited {
     color: #aaa;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -50,9 +61,7 @@ body.dark-mode header a:visited {
 body.dark-mode a:hover,
 body.dark-mode a:visited:hover,
 body.dark-mode footer a:hover,
-body.dark-mode footer a:visited:hover,
-body.dark-mode header a:hover,
-body.dark-mode header a:visited:hover {
+body.dark-mode footer a:visited:hover {
     color: #fff;
     text-decoration: underline;
 }
@@ -67,10 +76,6 @@ body.light-mode header,
 body.light-mode footer {
     background-color: #e9e9e9;
     color: #111;
-    text-align: center;
-    padding: 1.5rem 0;
-    margin-bottom: 20px;
-    margin-top: 20px;
 }
 
 body.light-mode header h1 {
@@ -83,12 +88,11 @@ body.light-mode h1 {
     margin-bottom: 0.6rem;
 }
 
+/* Light mode links */
 body.light-mode a,
 body.light-mode a:visited,
 body.light-mode footer a,
-body.light-mode footer a:visited,
-body.light-mode header a,
-body.light-mode header a:visited {
+body.light-mode footer a:visited {
     color: #0077cc;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -97,29 +101,20 @@ body.light-mode header a:visited {
 body.light-mode a:hover,
 body.light-mode a:visited:hover,
 body.light-mode footer a:hover,
-body.light-mode footer a:visited:hover,
-body.light-mode header a:hover,
-body.light-mode header a:visited:hover {
+body.light-mode footer a:visited:hover {
     color: #005fa3;
     text-decoration: underline;
 }
 
-p {
-    margin-bottom: 1.2rem;
-}
-
-ul li {
-    margin-top: 0px;
-}
-
-/* -------------------- Always-blue content links -------------------- */
-/* Force all content links (outside header/footer) to use light mode blue */
+/* -------------------- Always-blue content + header links -------------------- */
 main a,
 main a:visited,
 p a,
 p a:visited,
 ul li a,
-ul li a:visited {
+ul li a:visited,
+header a,
+header a:visited {
     color: #0077cc !important;
     text-decoration: none;
 }
@@ -129,7 +124,9 @@ main a:visited:hover,
 p a:hover,
 p a:visited:hover,
 ul li a:hover,
-ul li a:visited:hover {
+ul li a:visited:hover,
+header a:hover,
+header a:visited:hover {
     color: #005fa3 !important;
     text-decoration: underline;
 }
