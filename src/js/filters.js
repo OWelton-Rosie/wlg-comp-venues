@@ -12,7 +12,7 @@ export function initFilters() {
             filterRadios.forEach(r => r.parentElement.classList.remove('active'));
             radio.parentElement.classList.add('active');
 
-            // Filter using the raw feasibility from JSON
+            // Filter venues using exact JSON feasibility
             if (filter === 'all') {
                 displayVenues(venues);
             } else {

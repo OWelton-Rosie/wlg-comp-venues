@@ -71,7 +71,7 @@ body.light-mode .venue-card a:hover {
     font-weight: bold;
 }
 
-.not-feasible {
+.unfeasible {
     color: #dc3545;
     font-weight: bold;
 }

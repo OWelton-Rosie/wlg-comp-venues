@@ -48,7 +48,6 @@
         "link": "https://www.hcmtnz.com/hall-hire"
     },
 
-
     {
         "name": "Karori Arts and Crafts centre",
         "feasibility": "pbq",
@@ -73,7 +72,6 @@
         "comment": "Used for OCFMC Wellington and did well.",
         "link": "https://kiwiclass.org.nz/"
     },
-
 
     {
         "name": "Newtown Park Function Rooms",
@@ -130,71 +128,69 @@
         "link": "https://www.jclub.co.nz/venuehire"
     },
 
-
-
     {
         "name": "Wellington College",
-        "feasibility": "not feasible",
+        "feasibility": "unfeasible",
         "comment": "Way too expensive.",
         "link": "https://1867.co.nz/"
     },
     {
         "name": "Knox Church",
-        "feasibility": "not feasible",
+        "feasibility": "unfeasible",
         "comment": "Welcome to Wellington 2024 venue; was perfect, but not available Sundays and has permanent bookings on Saturdays.",
         "link": "https://www.knox.org.nz/bookings"
     },
     {
         "name": "Te Papa",
-        "feasibility": "not feasible",
+        "feasibility": "unfeasible",
         "comment": "Way too expensive.",
         "link": "https://www.takina.co.nz/organise/rooms-and-spaces"
     },
     {
         "name": "Takina Convention Centre",
-        "feasibility": "not feasible",
+        "feasibility": "unfeasible",
         "comment": "Too expensive, (most likely even for a major).",
         "link": "https://www.takina.co.nz/organise/rooms-and-spaces"
     },
     {
         "name": "Public Trust Hall",
-        "feasibility": "not feasible",
+        "feasibility": "unfeasible",
         "comment": "Does not seem suited to our needs.",
         "link": ""
     },
     {
         "name": "Aro Valley Community Centre",
-        "feasibility": "not feasible",
+        "feasibility": "unfeasible",
         "comment": "Too small.",
         "link": ""
     },
     {
         "name": "Wellington High School Hall",
-        "feasibility": "not feasible",
+        "feasibility": "unfeasible",
         "comment": "Too big and expensive for a local competition.",
         "link": ""
     },
     {
         "name": "Ngaio Town Hall",
-        "feasibility": "not feasible",
+        "feasibility": "unfeasible",
         "comment": "Probably fine for 40 person comp, but insanely echoey even for a PBQ so don't use again.",
         "link": "https://wellington.govt.nz/community-support-and-resources/resources-and-facilities/community-centres/locations/ngaio-town-hall"
     },
     {
         "name": "Clyde Quay School Hall",
-        "feasibility": "not feasible",
+        "feasibility": "unfeasible",
         "comment": "Hall is currently out of order. Office are unable to provide dates of when it'll be available.",
         "link": ""
     },
     {
         "name": "The hub Poneke",
-        "feasibility": "not feasible",
+        "feasibility": "unfeasible",
         "comment": "Likely too expensive for a local comp, there are regular bookings on Saturdays.",
         "link": "https://www.toituponeke.com/room-hire"
     },
     {
         "name": "Petone Club",
-        "feasibility": "not feasible",
+        "feasibility": "unfeasible",
         "comment": "On the expensive side, has limited hours, need a member to endorse and be present for the entire event.",
         "link": "https://www.petoneclub.co.nz/functions/"
     }
