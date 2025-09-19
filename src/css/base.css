@@ -111,3 +111,25 @@ p {
 ul li {
     margin-top: 0px;
 }
+
+/* -------------------- Always-blue content links -------------------- */
+/* Force all content links (outside header/footer) to use light mode blue */
+main a,
+main a:visited,
+p a,
+p a:visited,
+ul li a,
+ul li a:visited {
+    color: #0077cc !important;
+    text-decoration: none;
+}
+
+main a:hover,
+main a:visited:hover,
+p a:hover,
+p a:visited:hover,
+ul li a:hover,
+ul li a:visited:hover {
+    color: #005fa3 !important;
+    text-decoration: underline;
+}
