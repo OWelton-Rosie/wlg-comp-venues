@@ -20,7 +20,7 @@ Data is stored in `src/venues.json`.
 ## Creating Your Own Instance  
 Clone and navigate to the project:  
 ```
-git clone https://github.com/OWelton-Rosie/wlg-comp-venues  
+git clone https://github.com/OWelton-Rosie/wlg-comp-venues &&
 cd wlg-comp-venues
 ```
 
@@ -30,10 +30,9 @@ python3 -m http.server
 ```
 Then open http://localhost:8000/src in your browser.
 
-Note: Opening `file://` URLs will not work, because browsers block JSON imports for security reasons. Running a server is required.
+Note: Simply opening `file://` URLs will not work, because browsers block JSON imports for security reasons. Running a server is required.
 
 ## Editing Data
-
 All venue data lives in src/venues.json. This is where you’ll add, remove, or update venue information.
 
 ### Example JSON entry
