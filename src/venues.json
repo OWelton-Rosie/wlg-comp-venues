@@ -193,5 +193,11 @@
         "feasibility": "unfeasible",
         "comment": "On the expensive side, has limited hours, need a member to endorse and be present for the entire event.",
         "link": "https://www.petoneclub.co.nz/functions/"
+    },
+    {
+        "name": "National Library of New Zealand",
+        "feasibility": "unfeasible",
+        "comment": "Hideously expensive.",
+        "link": "https://natlib.govt.nz/visiting/wellington/venue-hire"
     }
 ]
