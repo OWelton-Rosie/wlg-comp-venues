@@ -110,12 +110,6 @@
         "link": ""
     },
     {
-        "name": "Vogelmorn Hall",
-        "feasibility": "potentially feasible",
-        "comment": "Comes with 8 tables and 50 chairs (would need to hire more), apart from that looks perfect.",
-        "link": "https://www.vogelmorn.nz/vogelmorn-hall"
-    },
-    {
         "name": "St Patrick's Hall",
         "feasibility": "potentially feasible",
         "comment": "Photos look somewhat spartan, but could work. They aren't appearing to reply to emails about hiring their hall, but I will try again.",
@@ -151,6 +145,12 @@
         "feasibility": "unfeasible",
         "comment": "Way too expensive.",
         "link": "https://www.takina.co.nz/organise/rooms-and-spaces"
+    },
+    {
+        "name": "Vogelmorn Hall",
+        "feasibility": "unfeasible",
+        "comment": "Too small.",
+        "link": "https://www.vogelmorn.nz/vogelmorn-hall"
     },
     {
         "name": "Takina Convention Centre",
