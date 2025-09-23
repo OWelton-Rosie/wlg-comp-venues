@@ -64,7 +64,7 @@ export function displayVenues(list) {
 
             const linkHTML = v.link
                 ? `<a href="${v.link}" target="_blank">View website</a>`
-                : `<i><p class="no-link">No website available (if you've found one, <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUL7smwdQPWHp1Xgl7rZnyWGPUghqX8f7n7u0uj4lg8JkvlA/viewform?usp=dialog" target="_blank">request a change</a>)</p></i>`;
+                : `<br><p class="no-link"><i><strong>No website available (if you've found one, <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUL7smwdQPWHp1Xgl7rZnyWGPUghqX8f7n7u0uj4lg8JkvlA/viewform?usp=dialog" target="_blank">request a change</a>)</i></strong></p>`;
 
             card.innerHTML = `
                 <h2>${v.name}</h2>
