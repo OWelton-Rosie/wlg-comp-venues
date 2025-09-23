@@ -8,7 +8,7 @@ Please follow the instructions in [instance.md](https://github.com/OWelton-Rosie
 If you're keen to reuse my code to make a catalog for your region, you're more than welcome to. Please follow the insturctions in [instance.md](https://github.com/OWelton-Rosie/wlg-comp-venues/blob/main/instance.md) for guidance on how to do this.
 
 ## Todo:
-- Automatically list venues alphabetically in category
+- ~~Automatically list venues alphabetically in each category~~
 - ~~Add search function~~
 - ~~Add light/dark mode?~~
 - ~~Add noscript message~~

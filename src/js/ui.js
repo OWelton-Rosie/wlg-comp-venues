@@ -1,3 +1,4 @@
+// venues.js
 import { venues } from './data.js';
 
 export const venueList = document.getElementById('venue-list');
@@ -36,13 +37,25 @@ export function displayVenues(list) {
         return acc;
     }, {});
 
+    // Sort categories alphabetically
+    const sortedCategories = Object.keys(grouped).sort((a, b) =>
+        a.localeCompare(b, undefined, { sensitivity: 'base' })
+    );
+
     // Render each group
-    Object.entries(grouped).forEach(([category, venues]) => {
+    sortedCategories.forEach(category => {
+        const venuesInCategory = grouped[category];
+
+        // Sort venues alphabetically by name
+        venuesInCategory.sort((a, b) =>
+            a.name.localeCompare(b.name, undefined, { sensitivity: 'base' })
+        );
+
         const heading = document.createElement('h1');
         heading.textContent = normalizeFeasibility(category);
         venueList.appendChild(heading);
 
-        venues.forEach(v => {
+        venuesInCategory.forEach(v => {
             const card = document.createElement('div');
             card.className = 'venue-card';
 
@@ -64,3 +77,6 @@ export function displayVenues(list) {
         });
     });
 }
+
+// Initialize display on page load
+displayVenues(venues);
