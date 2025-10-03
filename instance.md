@@ -41,20 +41,24 @@ All venue data lives in src/venues.json. This is where you’ll add, remove, or 
   "name": "Example Venue",
   "feasibility": "feasible",
   "comment": "Has regular bookings on Sundays.",
+  "features": [
+            "Projector"
+        ],
   "link": "https://example.com"
 }
 ```
 
 The acceptable fields are:
 
-- `name` — Venue name (string)  
-- `feasibility` — Availability code (string)
+- `name` — Venue name
+- `feasibility` — Availability code
     The acceptable fields in the `feasibility` string are:
     - `feasible` — Venue can be booked without restrictions
     - `pbq` — Venue is only feasible for Please Be Quiet competitions
     - `potentially feasible` — Venue may be possible but has conditions
     - `not feasible` — Venue cannot be booked
 - `comment` — Notes about the venue (optional)  
-- `link` — Website or booking link (optional)  
+- `features` - List of notable features the venue can provide **(optional)**
+- `link` — Website or booking link **(optional)**  
 
 

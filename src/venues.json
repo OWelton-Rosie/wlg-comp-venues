@@ -3,6 +3,13 @@
         "name": "Johnsonville Community Centre",
         "feasibility": "feasible",
         "comment": "Excellent venue; good size, plenty of facilities, slightly on the expensive side but good option.",
+        "features": [
+            "Projector",
+            "Wi-Fi",
+            "Plenty of tables and chairs",
+            "Kitchen facilities",
+            "Parking on site"
+        ],
         "link": "https://www.johnsonvillecommunitycentre.org.nz/about-us"
     },
     {
@@ -21,6 +28,10 @@
         "name": "Victoria University of Wellington - AM102 and AM104",
         "feasibility": "feasible",
         "comment": "Very good venue. Can get the venue for free as Jack is a student at VUW.",
+        "features": [
+            "Projector",
+            "Wi-Fi"
+        ],
         "link": "https://www.wgtn.ac.nz/about/campuses-facilities/venue-hire"
     },
     {
@@ -33,6 +44,10 @@
         "name": "Akau Tangi (formerly ASB) cntre",
         "feasibility": "feasible",
         "comment": "Good - slightly awkward shape but good for 50 people. ",
+        "features": [
+            "Wi-Fi",
+            "Parking on site"
+        ],
         "link": "https://wellington.govt.nz/recreation/facilities-and-centres/akau-tangi-sports-centre/venue-and-equipment-hire/courts"
     },
     {
@@ -70,6 +85,9 @@
         "name": "KiwiClass",
         "feasibility": "pbq",
         "comment": "Used for OCFMC Wellington and did well.",
+        "features": [
+            "Wi-Fi"
+        ],
         "link": "https://kiwiclass.org.nz/"
     },
 
@@ -125,6 +143,9 @@
         "name": "Johnsonville club",
         "feasibility": "potentially feasible",
         "comment": "Was used for NZ Cubing in the Capital 2025 and did well. No requirement for a member to endorse and be present for the entire event, which is a plus.",
+        "features": [
+            "Projector"
+        ],
         "link": "https://www.jclub.co.nz/venuehire"
     },
 
@@ -217,5 +238,5 @@
         "feasibility": "unfeasible",
         "comment": "Jack was quoted $500 per day, better venues can be found.",
         "link": "https://www.qmc.school.nz/about/facilities/"
-    }
+    } 
 ]

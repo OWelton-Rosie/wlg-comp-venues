@@ -131,7 +131,6 @@ header a:visited:hover {
     text-decoration: underline;
 }
 
-
 .center-wrapper {
     max-width: 800px;
     margin: 0 auto;
@@ -139,3 +138,16 @@ header a:visited:hover {
     font-size: inherit;
     text-align: center;
 }
+
+.venue-features {
+    margin-left: 20px;   /* pushes the list in a bit */
+    margin-top: 8px;     /* small space above */
+    margin-bottom: 8px;  /* small space below */
+    padding-left: 16px;  /* ensures bullets align nicely */
+    list-style-type: disc; /* standard bullet */
+  }
+  
+  .venue-features li {
+    margin-bottom: 4px; /* spacing between feature items */
+  }
+  

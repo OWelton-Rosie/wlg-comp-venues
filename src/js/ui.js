@@ -66,10 +66,18 @@ export function displayVenues(list) {
                 ? `<a href="${v.link}" target="_blank">View website</a>`
                 : `<br><p class="no-link"><i><strong>No website available (if you've found one, <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUL7smwdQPWHp1Xgl7rZnyWGPUghqX8f7n7u0uj4lg8JkvlA/viewform?usp=dialog" target="_blank">request a change</a>)</i></strong></p>`;
 
+                const featuresHTML = v.features && v.features.length
+                ? `<h3>Features:</h3>
+                   <ul class="venue-features">
+                       ${v.features.map(f => `<li>${f}</li>`).join('')}
+                   </ul>`
+                : '';            
+
             card.innerHTML = `
                 <h2>${v.name}</h2>
                 <p class="${feasibilityClass}">${feasibilityText}</p>
                 <p>${v.comment}</p>
+                ${featuresHTML}
                 ${linkHTML}
             `;
 
