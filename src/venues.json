@@ -26,7 +26,7 @@
     {
         "name": "Wellington East Girls College",
         "feasibility": "feasible",
-        "comment": "Good - missing some tables but was used for Wellington Summer 2023 and did well. ",
+        "comment": "Quoted aprox $400/day, cheaper options are available. ",
         "link": "https://www.wegc.school.nz/our-school/hire"
     },
     {
@@ -205,5 +205,17 @@
         "feasibility": "unfeasible",
         "comment": "Hideously expensive.",
         "link": "https://natlib.govt.nz/visiting/wellington/venue-hire"
+    },
+    {
+        "name": "Wellington Girls' College",
+        "feasibility": "unfeasible",
+        "comment": "Not accepting bookings due to contruction work.",
+        "link": "https://wgc.school.nz/our-school/facilities-for-hire/"
+    },
+    {
+        "name": "Queen Margaret College Hall",
+        "feasibility": "unfeasible",
+        "comment": "Jack was quoted $500 per day, better venues can be found.",
+        "link": "https://www.qmc.school.nz/about/facilities/"
     }
 ]

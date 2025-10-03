@@ -130,3 +130,12 @@ header a:visited:hover {
     color: #005fa3 !important;
     text-decoration: underline;
 }
+
+
+.center-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: inherit;
+    text-align: center;
+}
