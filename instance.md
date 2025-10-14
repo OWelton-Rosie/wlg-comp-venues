@@ -2,7 +2,7 @@
 *(Work in progress)*  
 
 ## Overview  
-This project manages venue data for an app. All information (venue name, feasibility, comments, and links) is stored in a single JSON file. You won’t need to modify JavaScript or CSS unless you want to customize functionality or appearance, however, you will want to edit the contents of `src/about.html` as it contains information that is relevant only to the Welllington speedcubing community.
+All information (venue name, feasibility, comments, and links) is stored in a single JSON file. You won’t need to modify JavaScript or CSS unless you want to customize functionality or appearance, however, you will want to edit the contents of both HTML files as they contain information and links that are relevant only to the Welllington speedcubing community.
 
 ## Specs  
 The app is built with:  
@@ -15,7 +15,7 @@ Why JSON?
 - Fast — the app loads data instantly  
 - Simple — easy to add or update venues  
 
-Data is stored in `src/venues.json`.  
+All venue data is stored in `src/venues.json`. If you wish to change how the app stores data, you'll need to edit the JS.
 
 ## Creating Your Own Instance  
 Clone and navigate to the project:  
