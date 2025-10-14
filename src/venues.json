@@ -248,5 +248,11 @@
         "feasibility": "unfeasible",
         "comment": "Too small for our needs.",
         "link": ""
+    },
+    {
+        "name": "Newlands Community Centre",
+        "feasibility": "unfeasible",
+        "comment": "Too small for even PBQ comps.",
+        "link": "https://wellington.govt.nz/community-support-and-resources/resources-and-facilities/community-centres/locations/newlands-community-centre"
     }
 ]
