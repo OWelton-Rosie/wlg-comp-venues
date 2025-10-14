@@ -111,7 +111,7 @@
     {
         "name": "Island Bay Presbyterian Church Auditorium",
         "feasibility": "potentially feasible",
-        "comment": "Haven't been inside. Hall is 260 square meters. We were quoted $35 per hour.",
+        "comment": "Haven't been inside. Hall is 260 square metres. We were quoted $35 per hour.",
         "link": "https://www.ibpc.org.nz/hire-our-facilities/"
     },
     {
@@ -252,7 +252,7 @@
     {
         "name": "Newlands Community Centre",
         "feasibility": "unfeasible",
-        "comment": "Too small for even PBQ comps.",
+        "comment": "Too small, even for PBQ comps.",
         "link": "https://wellington.govt.nz/community-support-and-resources/resources-and-facilities/community-centres/locations/newlands-community-centre"
     }
 ]
