@@ -111,19 +111,13 @@
     {
         "name": "Island Bay Presbyterian Church Auditorium",
         "feasibility": "potentially feasible",
-        "comment": "Haven't been inside. Website states that it's 260 square metres. Will email to check availability and price.",
+        "comment": "Haven't been inside. Hall is 260 square meters. We were quoted $35 per hour.",
         "link": "https://www.ibpc.org.nz/hire-our-facilities/"
     },
     {
         "name": "Hutt Central School Hall",
         "feasibility": "potentially feasible",
         "comment": "Feasibility is unknown, Jack has sent them an email to check.",
-        "link": ""
-    },
-    {
-        "name": "Berhampore School Hall",
-        "feasibility": "potentially feasible",
-        "comment": "Haven't been inside recently, might be a bit small, planning to check it out at some point.",
         "link": ""
     },
     {
@@ -188,6 +182,11 @@
         "name": "Public Trust Hall",
         "feasibility": "unfeasible",
         "comment": "Does not seem suited to our needs.",
+        "link": ""
+    },    {
+        "name": "Berhampore School Hall",
+        "feasibility": "unfeasible",
+        "comment": "Too expensive - $45/hour, comes with a $1,000 bond.",
         "link": ""
     },
     {
