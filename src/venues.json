@@ -242,5 +242,11 @@
         "feasibility": "unfeasible",
         "comment": "Jack was quoted $500 per day, better venues can be found.",
         "link": "https://www.qmc.school.nz/about/facilities/"
-    } 
+    },
+    {
+        "name": "Brooklyn School Hall",
+        "feasibility": "unfeasible",
+        "comment": "Too small for our needs.",
+        "link": ""
+    }
 ]
