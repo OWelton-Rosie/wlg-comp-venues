@@ -121,12 +121,6 @@
         "link": ""
     },
     {
-        "name": "South Wellington Intermediate School (SWIS) Hall",
-        "feasibility": "potentially feasible",
-        "comment": "Hall has been resurfaced, need to contact them to see if bookings can be made.",
-        "link": ""
-    },
-    {
         "name": "St Patrick's Hall",
         "feasibility": "potentially feasible",
         "comment": "Photos look somewhat spartan, but could work. They aren't appearing to reply to emails about hiring their hall, but I will try again.",
@@ -247,6 +241,12 @@
         "name": "Brooklyn School Hall",
         "feasibility": "unfeasible",
         "comment": "Too small for our needs.",
+        "link": ""
+    },
+    {
+        "name": "South Wellington Intermediate School (SWIS) Hall",
+        "feasibility": "unfeasible",
+        "comment": "Unavailable.",
         "link": ""
     },
     {
