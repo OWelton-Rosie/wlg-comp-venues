@@ -1,3 +1,4 @@
+// this file provides search functionality
 export function initSearch(venues, displayFunction) {
     const searchInput = document.getElementById('search-input');
 

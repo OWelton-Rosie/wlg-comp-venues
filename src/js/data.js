@@ -1,4 +1,5 @@
-// data.js
+// this file parses the data from venues.json
+
 export let venues = [];
 
 // Fetch venues from JSON (keep feasibility exactly as in JSON)

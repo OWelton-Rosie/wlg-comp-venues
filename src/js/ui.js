@@ -1,4 +1,4 @@
-// venues.js
+// this file handles the UI rendering of venues which have been loaded by data.js
 import { venues } from './data.js';
 
 export const venueList = document.getElementById('venue-list');

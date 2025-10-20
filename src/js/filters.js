@@ -1,3 +1,4 @@
+// this file provides filtering functionality for venues based on feasibility
 import { displayVenues } from './ui.js';
 import { venues } from './data.js';
 

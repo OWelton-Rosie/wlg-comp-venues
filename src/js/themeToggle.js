@@ -1,4 +1,4 @@
-// themeToggle.js
+// this file provides toggling between light and dark themes
 
 export function initThemeToggle() {
     const toggleBtn = document.getElementById("theme-toggle");
@@ -36,8 +36,4 @@ export function initThemeToggle() {
             applyTheme(currentTheme);
         }
     });
-
-    // Optional: allow dynamic updates even if saved, but prioritize saved theme
-    // If you want system to always override, replace the if-check above with:
-    // currentTheme = e.matches ? "dark" : "light";
 };
