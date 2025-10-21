@@ -115,6 +115,18 @@
         "link": "https://www.ibpc.org.nz/hire-our-facilities/"
     },
     {
+        "name": "Wellington Chinese Sports and Cultural Centre",
+        "feasibility": "potentially feasible",
+        "comment": "In photos, it looks good. They didn't reply to Jack's introductory email.",
+        "link": "https://www.wcscc.org.nz/facilities"
+    },
+    {
+        "name": "St Patrick's Kilbirnie Hall",
+        "feasibility": "potentially feasible",
+        "comment": "Looks good. Likely too expensive for local comps, might be suitable for Nats.",
+        "link": "https://www.stpats.school.nz/community/our-community/hall-hire"
+    },
+    {
         "name": "Hutt Central School Hall",
         "feasibility": "potentially feasible",
         "comment": "Feasibility is unknown, Jack has sent them an email to check.",
@@ -254,5 +266,17 @@
         "feasibility": "unfeasible",
         "comment": "Too small, even for PBQ comps.",
         "link": "https://wellington.govt.nz/community-support-and-resources/resources-and-facilities/community-centres/locations/newlands-community-centre"
+    },
+    {
+        "name": "Island Bay Surf Club",
+        "feasibility": "unfeasible",
+        "comment": "Way too expensive.",
+        "link": "https://octopus.org.nz/our-venues"
+    },
+    {
+        "name": "Lyall Bay Surf Club",
+        "feasibility": "unfeasible",
+        "comment": "Can't provide enough tables and chairs. Likely beyond our budget as well.",
+        "link": "https://www.lyallbayslsc.org.nz/venue-hire"
     }
 ]
