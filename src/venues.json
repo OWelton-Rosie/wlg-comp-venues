@@ -274,6 +274,12 @@
         "link": "https://octopus.org.nz/our-venues"
     },
     {
+        "name": "Island Bay Bowling Club",
+        "feasibility": "unfeasible",
+        "comment": "Too small and priced annoyingly.",
+        "link": "https://www.ibbc.co.nz/function-hire"
+    },
+    {
         "name": "Lyall Bay Surf Club",
         "feasibility": "unfeasible",
         "comment": "Can't provide enough tables and chairs. Likely beyond our budget as well.",
