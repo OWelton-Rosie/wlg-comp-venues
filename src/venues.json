@@ -52,13 +52,13 @@
     {
         "name": "Wellington Bridge Club",
         "feasibility": "feasible",
-        "comment": "Was used for Wellington Winter 2025 and did well. Has permanent Sunday bookings, but could work for a 1 day comp. ",
+        "comment": "Was used for Wellington Winter 2025 and did well. Has permanent Sunday bookings, but could work for a 1 day comp.",
         "link": "https://wellingtonbridge.co.nz/venue-hire/"
     },
     {
         "name": "Epuni Community Hall",
         "feasibility": "feasible",
-        "comment": "Haven't been inside, but seems good in photos, held day 1 of Nationals 2023.",
+        "comment": "Good venue. Looking forward to using it. Have had issues with reply times, but otherwise solid choice.",
         "link": "https://www.hcmtnz.com/hall-hire"
     },
 
@@ -112,6 +112,9 @@
         "name": "Island Bay Presbyterian Church Auditorium",
         "feasibility": "potentially feasible",
         "comment": "Haven't been inside. Hall is 260 square metres. We were quoted $35 per hour.",
+        "features": [
+            "Projector"
+        ],
         "link": "https://www.ibpc.org.nz/hire-our-facilities/"
     },
     {
