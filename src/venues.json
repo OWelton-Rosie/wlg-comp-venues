@@ -144,8 +144,14 @@
     {
         "name": "Filipino Community Centre",
         "feasibility": "potentially feasible",
-        "comment": "Has permanent bookings on Saturday, mostly free on Sundays. I was quoted $360 for a 12 hour hire on Sunday.",
+        "comment": "Court hire page appears to state that only members can hire its facilites. Might be worth emailing them to check.",
         "link": "https://bulwagan.wixsite.com/filipinocommcentre/facilities"
+    },
+    {
+        "name": "Wellington Badminton Centre",
+        "feasibility": "potentially feasible",
+        "comment": "Has permanent bookings on Saturday, mostly free on Sundays. I was quoted $360 for a 12 hour hire on Sunday.",
+        "link": "https://www.badminton.net.nz/court-hire"
     },
     {
         "name": "Johnsonville club",
