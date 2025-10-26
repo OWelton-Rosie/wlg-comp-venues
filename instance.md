@@ -60,7 +60,7 @@ The acceptable fields are:
     - `pbq` — Venue is only feasible for Please Be Quiet competitions
     - `potentially feasible` — Venue may be possible but has conditions
     - `not feasible` — Venue cannot be booked
-- `comment` — Notes about the venue (optional)  
+- `comment` — Notes about the venue **(optional)**  
 - `features` - List of notable features the venue can provide **(optional)**
 - `link` — Website or booking link **(optional)**  
 
