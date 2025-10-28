@@ -2,7 +2,7 @@
 After I felt that the catalog would be better if it was in the form of a website (as opposed to a Google Sheet), I built this site.
 
 ## Development
-Please follow the instructions in [instance.md](https://github.com/OWelton-Rosie/wlg-comp-venues/blob/main/instance.md) for information on running the project locally.
+Please follow the instructions in [instance.md](https://github.com/OWelton-Rosie/wlg-comp-venues/blob/main/instance.md#creating-your-own-instance) for information on running the project locally.
 
 # Creating your own instance
 If you're keen to reuse my code to make a catalog for your region, you're more than welcome to. Please follow the instructions in [instance.md](https://github.com/OWelton-Rosie/wlg-comp-venues/blob/main/instance.md) for guidance on how to do this.
