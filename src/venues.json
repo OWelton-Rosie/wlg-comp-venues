@@ -162,7 +162,12 @@
         ],
         "link": "https://www.jclub.co.nz/venuehire"
     },
-
+    {
+        "name": "Mt Cook School hall",
+        "feasibility": "potentially feasible",
+        "comment": "Usure of how feasible it is. I plan to email d rates and availability.",
+        "link": ""
+    },
     {
         "name": "Wellington College",
         "feasibility": "unfeasible",
