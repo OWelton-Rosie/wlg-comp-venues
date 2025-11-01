@@ -2,7 +2,11 @@
 export function initSearch(venues, displayFunction) {
     const searchInput = document.getElementById('search-input');
 
-    // Filter as user types
+    // Detect if user is on macOS to show correct shortcut
+    const isMac = navigator.platform.toUpperCase().includes('MAC');
+    searchInput.placeholder = `Search venues (use '/' or ${isMac ? 'Cmd' : 'Ctrl'}+K)`;
+
+    // Filter venues as user types
     searchInput.addEventListener('input', () => {
         const query = searchInput.value.toLowerCase();
 
@@ -18,14 +22,14 @@ export function initSearch(venues, displayFunction) {
 
     // Keyboard shortcuts: '/' and Cmd+K / Ctrl+K
     document.addEventListener('keydown', (e) => {
-        // If user presses '/' (and not typing in an input already)
+        // Focus search bar when '/' is pressed (unless already typing)
         if (e.key === '/' && document.activeElement !== searchInput) {
             e.preventDefault();
             searchInput.focus();
             searchInput.select(); // highlight existing text
         }
 
-        // Cmd+K (Mac) or Ctrl+K (Windows/Linux)
+        // Focus search bar with Cmd+K (Mac) or Ctrl+K (Windows/Linux)
         if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
             e.preventDefault();
             searchInput.focus();
