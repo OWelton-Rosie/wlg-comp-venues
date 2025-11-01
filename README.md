@@ -8,6 +8,7 @@ Please follow the instructions in [instance.md](https://github.com/OWelton-Rosie
 If you're keen to reuse my code to make a catalog for your region, you're more than welcome to. Please follow the instructions in [instance.md](https://github.com/OWelton-Rosie/wlg-comp-venues/blob/main/instance.md) for guidance on how to do this.
 
 ## Todo:
+- ~~Make searchbar active via '/' and/or 'cmd+k'~~
 - ~~Automatically list venues alphabetically in each category~~
 - ~~Add search function~~
 - ~~Add light/dark mode?~~
