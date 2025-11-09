@@ -1,6 +1,4 @@
 // this file does the rendering of venues which have been loaded by data.js and deals with UI interactions
-
-
 import { venues } from './data.js';
 
 export const venueList = document.getElementById('venue-list');
@@ -19,7 +17,7 @@ function getFeasibilityClass(feasibility) {
     return feasibility.trim().toLowerCase().replace(/\s+/g, '-');
 }
 
-export function displayVenues(list) {
+export function displayVenues(list, searchActive = false) {
     venueList.innerHTML = '';
 
     if (!list.length) {
@@ -45,10 +43,10 @@ export function displayVenues(list) {
         );
 
         const categoryDiv = document.createElement('div');
-
-        // By default, collapse unless feasible or pbq
-        const defaultExpanded = category === 'feasible' || category === 'pbq';
         categoryDiv.className = 'category';
+
+        // Expand if feasible/pbq OR if search is active
+        const defaultExpanded = category === 'feasible' || category === 'pbq' || searchActive;
 
         const header = document.createElement('div');
         header.className = 'category-header ' + (defaultExpanded ? 'expanded' : 'collapsed');

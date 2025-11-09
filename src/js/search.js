@@ -17,7 +17,8 @@ export function initSearch(venues, displayFunction) {
             );
         });
 
-        displayFunction(filteredVenues);
+        // Pass `true` if search is active to expand matching categories
+        displayFunction(filteredVenues, query.length > 0);
     });
 
     // Keyboard shortcuts: '/' and Cmd+K / Ctrl+K
