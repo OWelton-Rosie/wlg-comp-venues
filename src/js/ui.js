@@ -1,4 +1,6 @@
-// Handles rendering of venues loaded by data.js
+// this file does the rendering of venues which have been loaded by data.js and deals with UI interactions
+
+
 import { venues } from './data.js';
 
 export const venueList = document.getElementById('venue-list');
@@ -25,7 +27,6 @@ export function displayVenues(list) {
         return;
     }
 
-    // Group venues by feasibility
     const grouped = list.reduce((acc, v) => {
         const key = v.feasibility.trim().toLowerCase();
         if (!acc[key]) acc[key] = [];
@@ -33,7 +34,6 @@ export function displayVenues(list) {
         return acc;
     }, {});
 
-    // Sort categories alphabetically
     const sortedCategories = Object.keys(grouped).sort((a, b) =>
         a.localeCompare(b, undefined, { sensitivity: 'base' })
     );
@@ -44,19 +44,19 @@ export function displayVenues(list) {
             a.name.localeCompare(b.name, undefined, { sensitivity: 'base' })
         );
 
-        // Category wrapper
-        const categoryWrapper = document.createElement('div');
-        categoryWrapper.className = 'category-wrapper';
+        const categoryDiv = document.createElement('div');
 
-        // Clickable header
-        const displayName = `${normalizeFeasibility(category)} venues`;
+        // By default, collapse unless feasible or pbq
+        const defaultExpanded = category === 'feasible' || category === 'pbq';
+        categoryDiv.className = 'category';
+
         const header = document.createElement('div');
-        header.className = 'category-header';
-        header.innerHTML = `<h1>${displayName}</h1><span class="arrow"></span>`;
+        header.className = 'category-header ' + (defaultExpanded ? 'expanded' : 'collapsed');
+        header.innerHTML = `<h1>${normalizeFeasibility(category)} venues</h1><span class="arrow"></span>`;
 
-        // Content container
         const content = document.createElement('div');
         content.className = 'category-content';
+        content.style.display = defaultExpanded ? 'block' : 'none';
 
         venuesInCategory.forEach(v => {
             const card = document.createElement('div');
@@ -67,9 +67,7 @@ export function displayVenues(list) {
 
             const linkHTML = v.link
                 ? `<a href="${v.link}" target="_blank">View website</a>`
-                : `<p class="no-link"><i><strong>No website available (if you've found one, 
-                   <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUL7smwdQPWHp1Xgl7rZnyWGPUghqX8f7n7u0uj4lg8JkvlA/viewform?usp=dialog" 
-                   target="_blank">request a change</a>).</strong></i></p>`;
+                : `<p class="no-link"><i><strong>No website available (if you've found one, <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUL7smwdQPWHp1Xgl7rZnyWGPUghqX8f7n7u0uj4lg8JkvlA/viewform?usp=dialog" target="_blank">request a change</a>).</strong></i></p>`;
 
             const featuresHTML = v.features && v.features.length
                 ? `<h3>Features:</h3>
@@ -90,32 +88,22 @@ export function displayVenues(list) {
             content.appendChild(card);
         });
 
-        // Default open/closed state
-        const categoryKey = category.trim().toLowerCase();
-        const isInitiallyOpen = categoryKey === 'feasible' || categoryKey === 'pbq';
-        content.style.display = isInitiallyOpen ? 'block' : 'none';
-        const arrow = header.querySelector('.arrow');
-        arrow.textContent = isInitiallyOpen ? '▼' : '▶';
+        categoryDiv.appendChild(header);
+        categoryDiv.appendChild(content);
+        venueList.appendChild(categoryDiv);
+    });
 
-        // Append header and content
-        categoryWrapper.appendChild(header);
-        categoryWrapper.appendChild(content);
-        venueList.appendChild(categoryWrapper);
+    // Add toggle functionality
+    document.querySelectorAll('.category-header').forEach(header => {
+        header.addEventListener('click', () => {
+            const content = header.nextElementSibling;
+            const isCollapsed = content.style.display === 'none';
+            content.style.display = isCollapsed ? 'block' : 'none';
+            header.classList.toggle('collapsed', !isCollapsed);
+            header.classList.toggle('expanded', isCollapsed);
+        });
     });
 }
 
-// Event delegation for category toggles
-document.addEventListener('click', e => {
-    const header = e.target.closest('.category-header');
-    if (!header) return;
-
-    const content = header.nextElementSibling;
-    const arrow = header.querySelector('.arrow');
-    const isHidden = content.style.display === 'none';
-
-    content.style.display = isHidden ? 'block' : 'none';
-    arrow.textContent = isHidden ? '▼' : '▶';
-});
-
-// Initialize on load
+// Initialize display on page load
 displayVenues(venues);
