@@ -34,6 +34,15 @@ body.dark-mode .venue-card a:hover {
     text-decoration: underline;
 }
 
+body.dark-mode .toggle-details {
+    background: #0077cc;
+    color: #fff;
+}
+
+body.dark-mode .toggle-details:hover {
+    background: #0099ff;
+}
+
 /* -------------------- Light mode -------------------- */
 body.light-mode .venue-card {
     background-color: #fff;
@@ -60,7 +69,16 @@ body.light-mode .venue-card a:hover {
     text-decoration: underline;
 }
 
-/* Feasibility text color coding (same both modes) */
+body.light-mode .toggle-details {
+    background: #0077cc;
+    color: #fff;
+}
+
+body.light-mode .toggle-details:hover {
+    background: #005fa3;
+}
+
+/* Feasibility color coding */
 .feasible {
     color: #28a745;
     font-weight: bold;
@@ -77,6 +95,27 @@ body.light-mode .venue-card a:hover {
 }
 
 .pbq {
-    color: #FF79C6;
+    color: #ff79c6;
     font-weight: bold;
+}
+
+/* Card layout */
+.venue-card {
+    margin: 0.75rem 0;
+    padding: 0.75rem 1rem;
+}
+
+.toggle-details {
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.details {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    transition: all 0.25s ease-in-out;
 }

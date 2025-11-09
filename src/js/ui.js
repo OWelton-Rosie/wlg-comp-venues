@@ -1,13 +1,11 @@
-// this file handles the UI rendering of venues which have been loaded by data.js
+// Handles rendering of venues loaded by data.js
 import { venues } from './data.js';
 
 export const venueList = document.getElementById('venue-list');
 
-// Normalize feasibility for display
 function normalizeFeasibility(feasibility) {
     const key = feasibility.trim().toLowerCase();
-    if (key === 'pbq') return 'PBQ only'; // only special case
-    // Title-case everything else
+    if (key === 'pbq') return 'PBQ only';
     return feasibility
         .trim()
         .split(' ')
@@ -15,12 +13,10 @@ function normalizeFeasibility(feasibility) {
         .join(' ');
 }
 
-// Generate a safe CSS class from feasibility
 function getFeasibilityClass(feasibility) {
     return feasibility.trim().toLowerCase().replace(/\s+/g, '-');
 }
 
-// Render venues in the DOM
 export function displayVenues(list) {
     venueList.innerHTML = '';
 
@@ -42,18 +38,25 @@ export function displayVenues(list) {
         a.localeCompare(b, undefined, { sensitivity: 'base' })
     );
 
-    // Render each group
     sortedCategories.forEach(category => {
         const venuesInCategory = grouped[category];
-
-        // Sort venues alphabetically by name
         venuesInCategory.sort((a, b) =>
             a.name.localeCompare(b.name, undefined, { sensitivity: 'base' })
         );
 
-        const heading = document.createElement('h1');
-        heading.textContent = normalizeFeasibility(category);
-        venueList.appendChild(heading);
+        // Category wrapper
+        const categoryWrapper = document.createElement('div');
+        categoryWrapper.className = 'category-wrapper';
+
+        // Clickable header
+        const displayName = `${normalizeFeasibility(category)} venues`;
+        const header = document.createElement('div');
+        header.className = 'category-header';
+        header.innerHTML = `<h1>${displayName}</h1><span class="arrow"></span>`;
+
+        // Content container
+        const content = document.createElement('div');
+        content.className = 'category-content';
 
         venuesInCategory.forEach(v => {
             const card = document.createElement('div');
@@ -64,27 +67,55 @@ export function displayVenues(list) {
 
             const linkHTML = v.link
                 ? `<a href="${v.link}" target="_blank">View website</a>`
-                : `<br><p class="no-link"><i><strong>No website available (if you've found one, <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUL7smwdQPWHp1Xgl7rZnyWGPUghqX8f7n7u0uj4lg8JkvlA/viewform?usp=dialog" target="_blank">request a change</a>)</i></strong></p>`;
+                : `<p class="no-link"><i><strong>No website available (if you've found one, 
+                   <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUL7smwdQPWHp1Xgl7rZnyWGPUghqX8f7n7u0uj4lg8JkvlA/viewform?usp=dialog" 
+                   target="_blank">request a change</a>).</strong></i></p>`;
 
-                const featuresHTML = v.features && v.features.length
+            const featuresHTML = v.features && v.features.length
                 ? `<h3>Features:</h3>
                    <ul class="venue-features">
                        ${v.features.map(f => `<li>${f}</li>`).join('')}
                    </ul>`
-                : '';            
+                : '';
 
             card.innerHTML = `
                 <h2>${v.name}</h2>
                 <p class="${feasibilityClass}">${feasibilityText}</p>
-                <p>${v.comment}</p>
-                ${featuresHTML}
-                ${linkHTML}
+                <div class="details">
+                    <p>${v.comment}</p>
+                    ${featuresHTML}
+                    ${linkHTML}
+                </div>
             `;
-
-            venueList.appendChild(card);
+            content.appendChild(card);
         });
+
+        // Default open/closed state
+        const categoryKey = category.trim().toLowerCase();
+        const isInitiallyOpen = categoryKey === 'feasible' || categoryKey === 'pbq';
+        content.style.display = isInitiallyOpen ? 'block' : 'none';
+        const arrow = header.querySelector('.arrow');
+        arrow.textContent = isInitiallyOpen ? '▼' : '▶';
+
+        // Append header and content
+        categoryWrapper.appendChild(header);
+        categoryWrapper.appendChild(content);
+        venueList.appendChild(categoryWrapper);
     });
 }
 
-// Initialize display on page load
+// Event delegation for category toggles
+document.addEventListener('click', e => {
+    const header = e.target.closest('.category-header');
+    if (!header) return;
+
+    const content = header.nextElementSibling;
+    const arrow = header.querySelector('.arrow');
+    const isHidden = content.style.display === 'none';
+
+    content.style.display = isHidden ? 'block' : 'none';
+    arrow.textContent = isHidden ? '▼' : '▶';
+});
+
+// Initialize on load
 displayVenues(venues);

@@ -131,6 +131,7 @@ header a:visited:hover {
     text-decoration: underline;
 }
 
+/* -------------------- Shared layout -------------------- */
 .center-wrapper {
     max-width: 800px;
     margin: 0 auto;
@@ -139,15 +140,95 @@ header a:visited:hover {
     text-align: center;
 }
 
+/* -------------------- Venue features -------------------- */
 .venue-features {
-    margin-left: 20px;   /* pushes the list in a bit */
-    margin-top: 8px;     /* small space above */
-    margin-bottom: 8px;  /* small space below */
-    padding-left: 16px;  /* ensures bullets align nicely */
-    list-style-type: disc; /* standard bullet */
-  }
-  
-  .venue-features li {
-    margin-bottom: 4px; /* spacing between feature items */
-  }
-  
+    margin-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-left: 16px;
+    list-style-type: disc;
+}
+
+.venue-features li {
+    margin-bottom: 4px;
+}
+
+/* -------------------- Category headers -------------------- */
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6em 1em;
+    border-radius: 0.6em;
+    cursor: pointer;
+    margin-top: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category-header h1 {
+    margin: 0;
+    font-size: 1.4em;
+}
+
+/* Light mode category header */
+body.light-mode .category-header {
+    background: #e0e0e0;
+    color: #111;
+    border: 1px solid #ccc;
+}
+
+body.light-mode .category-header:hover {
+    background: #d6d6d6;
+}
+
+/* Dark mode category header */
+body.dark-mode .category-header {
+    background: #1f1f1f;
+    color: #eee;
+    border: 1px solid #333;
+}
+
+body.dark-mode .category-header:hover {
+    background: #2a2a2a;
+}
+
+/* Category content */
+.category-content {
+    margin-left: 1em;
+    margin-top: 0.5em;
+    transition: all 0.3s ease-in-out;
+}
+
+.category-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-secondary);
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    transition: background-color 0.25s ease;
+}
+
+.category-header:hover {
+    background-color: var(--bg-hover);
+}
+
+.category-header h1 {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.category-header .arrow {
+    font-size: 1.2rem;
+    user-select: none;
+}
+
+.category-content {
+    margin-top: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+
