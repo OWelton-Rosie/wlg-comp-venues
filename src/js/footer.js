@@ -1,5 +1,5 @@
-// footer.js
-const footerURL = 'https://wlg-comp-venues.pages.dev/footer.html'; // or an absolute URL if shared across domains
+// shared footer component
+const footerURL = 'https://wlg-comp-venues.pages.dev/footer.html'; // target URL
 
 fetch(footerURL)
   .then(response => {
